@@ -60,7 +60,7 @@ def main():
 
     id = [i for i in xrange(1, len(X_test) + 1)]
     prob_rf = np.insert(prob_rf, 0, id, axis=1)
-    np.savetxt("foo.csv", prob_rf, delimiter=",",
+    np.savetxt("output.csv", prob_rf, delimiter=",",
                fmt=['%d', '%1.1f', '%1.1f', '%1.1f', '%1.1f', '%1.1f', '%1.1f', '%1.1f', '%1.1f', '%1.1f'],
                header='id,Class_1,Class_2,Class_3,Class_4,Class_5,Class_6,Class_7,Class_8,Class_9')
     print(prob_rf)
